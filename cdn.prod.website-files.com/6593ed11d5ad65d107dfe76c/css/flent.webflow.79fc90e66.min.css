@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -5,7 +9,10 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
+  background-color: black;
+  color: white;
+  
 }
 
 article,
@@ -249,8 +256,9 @@ th {
 }
 
 * {
-  box-sizing: border-box
-}
+  box-sizing: border-box;
+  max-width: 100% !important;
+  overflow-x: hidden !important;}
 
 html {
   height: 100%
@@ -2168,13 +2176,11 @@ textarea.w-select {
   left: 0
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 :root {
-  --flent--font--text: "Plus Jakarta", Arial, sans-serif;
+  --flent--font--text: 'Poppins';
   --text--primary: var(--dark--100);
   --dark--100: #191a23;
-  --flent--font--heading: 'Poppins';
+  --flent--font--heading: 'Unbounded';
   --lavender--100: #b592ff;
   --dark--40: #b7b8c1;
   --white: white;
@@ -3108,8 +3114,8 @@ textarea.w-select {
 
 body {
   font-family: var(--flent--font--text);
-  color: var(--text--primary);
-  background-color: #fff;
+  color: white;
+  background-color: black;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5
@@ -3178,10 +3184,17 @@ p {
 }
 
 a {
-  color: var(--dark--100);
+  color: white;
   font-weight: 500;
   text-decoration: none
 }
+
+@media (min-width: 992px) {
+    .navbar {
+        color: white !important;
+    }
+}
+
 
 a:hover {
   color: var(--lavender--100)
@@ -3310,7 +3323,7 @@ figcaption {
 
 .navbar {
   z-index: 999;
-  background-color: var(--white);
+  background-color: white !important;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -3567,7 +3580,7 @@ figcaption {
   background-color: var(--background);
   color: var(--dark--100);
   border-style: none;
-  padding: 0
+  padding: 10px;
 }
 
 .button.is-link:hover {
@@ -3928,7 +3941,7 @@ figcaption {
 }
 
 .color-dark-100 {
-  color: var(--flent--reserve--secondary-text)
+  color:white;
 }
 
 .color-dark-60 {
@@ -9012,7 +9025,7 @@ figcaption {
 .heading-style-h5 {
   box-sizing: border-box;
   font-family: var(--flent--font--heading);
-  color: var(--flent--reserve--secondary-text);
+  color: white;
   letter-spacing: 0;
   text-transform: capitalize;
   object-fit: fill;
@@ -10927,7 +10940,7 @@ figcaption {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   border: 1px solid var(--lavender--20);
-  background-color: var(--background);
+  background-color: #ECC80B;
   border-radius: 1.5rem;
   flex-direction: column;
   grid-template-rows: auto;
@@ -11824,7 +11837,7 @@ figcaption {
 
 .property_end-cta_component {
   border-radius: var(--corners--medium);
-  background-color: var(--lavender--20);
+  background-color: #ECC80B;
   background-image: url(https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6593ed11d5ad65d107dfe7bd_Town%20Buildings%20V4.svg);
   background-position: 100%;
   background-repeat: no-repeat;
@@ -20707,7 +20720,7 @@ figcaption {
   }
 
   .color-dark-100 {
-    color: var(--flent--reserve--secondary-text);
+    color: white;
     text-align: left
   }
 
@@ -21031,7 +21044,7 @@ figcaption {
   }
 
   .heading-style-h5 {
-    color: var(--flent--reserve--secondary-text)
+    color: white;
   }
 
   .margin-horizontal {
@@ -21343,7 +21356,7 @@ figcaption {
   }
 
   .prop-list_content-header.is-home {
-    background-color: var(--background)
+    background-color: #ECC80B
   }
 
   .prop-list_details {
@@ -21830,148 +21843,4 @@ figcaption {
   #w-node-d324ee85-88c0-960b-c003-426a72954c1e-38e8b3e2 {
     justify-self: center
   }
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca5f7442cbcb0b82d6f_GeneralSans-SemiboldItalic.woff2') format('woff2');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca5a0f5d43a3ecba84b_GeneralSans-Extralight.woff2') format('woff2');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca500ece7375a3e91f5_GeneralSans-LightItalic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca51d0033869875f1d6_GeneralSans-ExtralightItalic.woff2') format('woff2');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca5eeb80c96baef7a0f_GeneralSans-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca6e1a863b4a8a31c93_GeneralSans-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca6f9dec28408581a4c_GeneralSans-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca65a0f462797a09396_GeneralSans-MediumItalic.woff2') format('woff2');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca652f87c6fbdec7051_GeneralSans-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca60b98d2c10aa570e5_GeneralSans-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca652f87c6fbdec704d_GeneralSans-Semibold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Generalsans';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6595dca61e40ab673c3d133a_GeneralSans-BoldItalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Plus Jakarta';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/66ebe1d7a1d90c134734fb8b_PlusJakartaSans-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Plus Jakarta';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/66ebe1d7a49ba9efc9a6edef_PlusJakartaSans-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Zin Display Cond';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/66ebe43636896f58a3f667eb_4c9093b5d210767c0650bd55db84676e.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Plus Jakarta';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/66ebe1d7804698685946d6e9_PlusJakartaSans-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Plus Jakarta';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/66ebe1d788b9813019ad072b_PlusJakartaSans-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Plus Jakarta';
-  src: url('https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/66ebe1d87af13f16af3143cd_PlusJakartaSans-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
 }
