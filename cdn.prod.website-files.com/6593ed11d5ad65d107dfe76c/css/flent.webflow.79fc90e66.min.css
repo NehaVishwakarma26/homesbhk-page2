@@ -3559,7 +3559,9 @@ figcaption {
 
 .button.button-outline-cta.is-small {
   -webkit-text-stroke-width: 0px;
-  border: 1px solid #000
+  border: 1px solid #000;
+  background-color: var(--white);
+    color: var(--lavender--100);
 }
 
 .button.tab-nav-blog {
@@ -10107,7 +10109,8 @@ figcaption {
   letter-spacing: -.01125rem;
   font-size: 1.75rem;
   font-weight: 500;
-  line-height: 111.111%
+  line-height: 111.111%;
+  color:#0943A0;
 }
 
 .heading-style-h4.display-inline {
@@ -10510,8 +10513,8 @@ figcaption {
 }
 
 .properties_avaibility_status.available {
-  background-color: var(--smith-apple--100);
-  color: var(--dark--100);
+  background-color: #0943A0;
+  color: var(--white);
   display: flex
 }
 
@@ -11858,7 +11861,7 @@ figcaption {
 
 .property_end-cta_component {
   border-radius: var(--corners--medium);
-  background-color: #ECC80B;
+  background-color: #000000;
   background-image: url(https://cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/6593ed11d5ad65d107dfe7bd_Town%20Buildings%20V4.svg);
   background-position: 100%;
   background-repeat: no-repeat;
@@ -16979,6 +16982,10 @@ figcaption {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center
+}
+
+.property_header_title{
+  color: var(--white) !important;
 }
 
 .prop-list_item-title.heading-style-h5 {
