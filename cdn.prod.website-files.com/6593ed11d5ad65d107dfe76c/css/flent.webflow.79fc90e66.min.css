@@ -11005,7 +11005,6 @@ figcaption {
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1.25fr;
   grid-auto-columns: 1fr;
   align-items: start;
   display: grid
